@@ -43,52 +43,46 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="✏"
-            android:textSize="16sp"/>
+            android:src="@drawable/create"/>
 
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="🔍"
-            android:textSize="16sp"/>
+            android:src="@drawable/search"/>
 
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="🏠"
-            android:textSize="16sp"/>
+            android:src="@drawable/home"/>
 
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text=" @"
-            android:textSize="16sp"/>
+            android:src="@drawable/reply"/>
 
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="🔁"
-            android:textSize="16sp"/>
+            android:src="@drawable/refresh"/>
 
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="⏏"
-            android:textSize="16sp"/>
+            android:src="@drawable/move_vert"/>
     </LinearLayout>
 </RelativeLayout>

@@ -8,6 +8,8 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.google.android.material.tabs.TabLayout;
@@ -15,6 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
-        private final int PAGE_COUNT = 11;
+        private final int PAGE_COUNT = 8 ;
         private String titles[] = new String[]{"Timeline","Profile","Search","Trend","Reply",
-                                                "MyTweets","Likes","DM","Lists","RT of me","Quoted Tweet"};
+                                                "MyTweets","Likes","DM"};
 
         public HomeFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -61,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
                     return Likes.newInstance();
                 case 7:
                     return DM.newInstance();
-                case 8:
-                    return Lists.newInstance();
-                case 9:
-                    return RTofme.newInstance();
-                case 10:
-                    return QuotedTweets.newInstance();
+//                case 8:
+//                    return Lists.newInstance();
+//                case 9:
+//                    return RTofme.newInstance();
+//                case 10:
+//                    return QuotedTweets.newInstance();
             }
             return new Fragment();
         }

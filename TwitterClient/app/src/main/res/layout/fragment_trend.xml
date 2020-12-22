@@ -1,14 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Trend">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/location_Trend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/normal_padding"
+        android:paddingRight="20dp"
+        android:text="Vietnam"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/trend_text"/>
 
-</FrameLayout>
+    <ScrollView
+        android:id="@+id/scroll_Trend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_Trend">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/normal_padding"
+            android:paddingLeft="@dimen/normal_padding">
+
+            <TextView
+                android:id="@+id/trend1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#SUGA"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div1"
+                android:layout_below="@+id/trend1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend2"
+                android:layout_below="@+id/div1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#thetop_100"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div2"
+                android:layout_below="@+id/trend2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend3"
+                android:layout_below="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="xsmb"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div3"
+                android:layout_below="@+id/trend3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend4"
+                android:layout_below="@id/div3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#Vietnam"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div4"
+                android:layout_below="@+id/trend4"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend5"
+                android:layout_below="@id/div4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#winmetawin"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div5"
+                android:layout_below="@+id/trend5"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend6"
+                android:layout_below="@id/div5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#morioh"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div6"
+                android:layout_below="@+id/trend6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend7"
+                android:layout_below="@id/div6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="release date"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div7"
+                android:layout_below="@+id/trend7"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend8"
+                android:layout_below="@id/div7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="Ngày"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div8"
+                android:layout_below="@+id/trend8"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend9"
+                android:layout_below="@id/div8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#bbrightvc"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div9"
+                android:layout_below="@+id/trend9"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend10"
+                android:layout_below="@id/div9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#COVID19"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div10"
+                android:layout_below="@+id/trend10"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend11"
+                android:layout_below="@id/div10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#KangDaniel"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div11"
+                android:layout_below="@+id/trend11"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend12"
+                android:layout_below="@id/div11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="#100MostBeautiful2020"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div12"
+                android:layout_below="@+id/trend12"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend13"
+                android:layout_below="@id/div12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="XYZ"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div13"
+                android:layout_below="@+id/trend13"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend14"
+                android:layout_below="@id/div13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="XYZ"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+            <TextView
+                android:id="@+id/div14"
+                android:layout_below="@+id/trend14"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/Grey" />
+            <TextView
+                android:id="@+id/trend15"
+                android:layout_below="@id/div14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="XYZ"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/trend_text"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
